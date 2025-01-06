@@ -1,13 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{723e5577-28d8-48dc-a83c-01152d265357}">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.13">
+  <POU Name="MAIN" Id="{723e5577-28d8-48dc-a83c-01152d265357}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	bEntrada01	:	BOOL;
+	bEntrada02	:	BOOL;
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[
+bEntrada01 := bEntrada02;
+]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="8" Count="0" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
