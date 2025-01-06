@@ -5,16 +5,20 @@
 VAR
 	bEntrada01	:	BOOL;
 	bEntrada02	:	BOOL;
+	bSalida01	:	BOOL;
+	bSalida02	:	BOOL;	
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
 bEntrada01 := bEntrada02;
+bSalida01 := bSalida02;
 ]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="8" Count="0" />
       <LineId Id="2" Count="0" />
+      <LineId Id="12" Count="0" />
       <LineId Id="9" Count="0" />
     </LineIds>
   </POU>
